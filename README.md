@@ -1,6 +1,8 @@
-  
-# REPOSITÓRIO PARA DESENVOLVIMENTO DE PROJETOS EM JAVASCRIPT  <img src="imgJs.png" width="42" height="42">;
-<p>Resolução dos exercícios propostos na disciplina de "Laboratório de Engenharia de Software", pertencente á grade curricular do 5º termo do curso de Análise e Desenvolvimento de Sistemas da FATEC de Presidente Prudente-SP.</p> 
+<img src="imgJs.png" width="60" height="60">
+
+# REPOSITÓRIO PARA DESENVOLVIMENTO DE PROJETOS EM JAVASCRIPT;
+	
+> Resolucao dos exercícios propostos na disciplina de "Laboratório de Engenharia de Software", pertencente á grade curricular do 5º termo do curso de Análise e Desenvolvimento de Sistemas da FATEC de Presidente Prudente-SP.
 
 ### 🙏 Facilitadora: Prof.ª Dr.ª Ana Carolina Nicolosi da Rocha Gracioso.
 
@@ -20,3 +22,4 @@ A elaboração irá abordar as disciplinas de requisitos, análise e projeto, im
 * 🔗 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript.
 * 🔗 https://www.w3schools.com/js/default.asp;
 * 🔗 https://pt-br.reactjs.org.
+
