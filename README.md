@@ -1,6 +1,6 @@
 <img src="imgJs.png" width="60" height="60">
 
-# REPOSITÓRIO PARA DESENVOLVIMENTO DE PROJETOS EM JAVASCRIPT;
+# REPOSITÓRIO PARA DESENVOLVIMENTO DE PROJETOS EM JAVASCRIPT:
 	
 > Resolucao dos exercícios propostos na disciplina de "Laboratório de Engenharia de Software", pertencente á grade curricular do 5º termo do curso de Análise e Desenvolvimento de Sistemas da FATEC de Presidente Prudente-SP.
 
