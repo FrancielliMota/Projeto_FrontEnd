@@ -1,0 +1,50 @@
+<!-- Solicite ao usuário um número inteiro positivo.
+O usuário deverá digitar um valor válido.
+Calcule o fatorial.
+Informe em uma janela de alerta, o resultado -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4: verificar fatorial</title>
+</head>
+<body>
+    <script>
+        // Solicita ao usuário um número inteiro positivo
+        let numUsuario;
+        do {
+            numUsuario = prompt('Digite um número inteiro positivo:');
+        } while (!verificarValidade(numUsuario));
+
+        // Calcula o fatorial do número
+        const fatorial = calcularFatorial(Number(numUsuario));
+
+        // Exibe o resultado em uma janela de alerta
+        alert(`O fatorial de ${numUsuario} é: ${fatorial}`);
+
+        // Função para verificar se o número é um inteiro positivo
+        function verificarValidade(num) {
+            const numero = Number(num);
+            return Number.isInteger(numero) && numero > 0;
+        }
+
+        // Função para calcular o fatorial de um número
+        function calcularFatorial(numero) {
+            if (numero === 0 || numero === 1) {
+                return 1;
+            } else {
+                let resultado = 1;
+                for (let i = 2; i <= numero; i++) {
+                    resultado *= i;
+                }
+                return resultado;
+            }
+        }
+
+    </script>
+   
+    
+</body>
+</html>
+

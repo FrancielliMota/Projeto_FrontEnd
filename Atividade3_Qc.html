@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 3c: manipulando Strings</title>
+</head>
+<body>
+
+<h1>Palíndromo</h1>
+<p>Uma palavra, frase, número ou sequência de caracteres que se lê da mesma forma tanto da esquerda para a direita quanto da direita para a esquerda. </p>
+<p>Ou seja, é uma sequência que permanece inalterada quando lida de trás para frente.</p>
+<br>
+<hr>
+<br>
+<h4>Verifique se a palavra é um palíndromo: </h4>
+<label for="textoInput">Digite uma palavra ou frase:</label>
+<input type="text" id="textoInput">
+<button onclick="verificarPalindromo()">Verificar</button>
+
+    <script>
+        function verificarPalindromo() {
+            // Obtém o valor do campo de texto
+            const texto = document.getElementById('textoInput').value.toLowerCase().replace(/\s/g, ''); // Converte para minúsculas e remove espaços
+
+            // Verifica se é um palíndromo
+            const reverso = texto.split('').reverse().join('');
+            const resultado = texto === reverso ? 'É um palíndromo!' : 'Não é um palíndromo!';
+
+            // Exibe o resultado em uma janela de alerta
+            alert(resultado);
+        }
+    </script>
+
+</body>
+</html>

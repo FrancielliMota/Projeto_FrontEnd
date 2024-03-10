@@ -1,0 +1,50 @@
+<!-- Solicite ao usuário um número inteiro positivo.
+O usuário deverá digitar um valor válido.
+Informe em uma janela de alerta se o número é primo ou não. 
+Número primo é maior que 1, divisível apenas por si próprio e por 1.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2: verificar número primo</title>
+</head>
+<body>
+    <script>
+        const numUsuario = prompt('Digite um número inteiro positivo: ');
+
+        if (verificarValidade(numUsuario) && numPrimo(numUsuario)) {
+            alert("O número é primo.");
+        } else {
+            alert("O número não é primo.");
+        }
+
+        function verificarValidade(num) {
+            if (Number.isInteger(Number(num)) && num > 0) {
+                return true; // O número é positivo e inteiro
+            } else {
+                return false; 
+            }
+        }
+
+        function numPrimo(numero) {
+            if (numero <= 1) {
+                return false; // Números menores ou iguais a 1 não são primos;
+            }
+
+            // Verificar divisibilidade por números de 2 até a raiz quadrada do número
+            for (let i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i === 0) {
+                    return false; // Encontrou um divisor, não é primo
+                }
+            }
+            
+            return true; // Não encontrou divisores, é primo
+        }
+
+    </script>
+   
+    
+</body>
+</html>
