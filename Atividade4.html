@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Cadastro</title>
+<title>Atividade 4 - Laboratório de Engenharia de Software</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imgJs.png">
+        <h1>Laboratório de Engenharia de Software</h1>
+        <h3>Atividades JavaScript</h3>
+        <h4>Aluna: Francielli Viana Mota</h4>
+    </header>
+    <main>            
+        <div class="container">
+            <h2>Formulário de Cadastro</h2>
+            <form id="form">
+                <label for="tipo">Escolha o usuário:</label>
+                <select id="tipo">
+                    <option value="aluno">Aluno</option>
+                    <option value="professor">Professor</option>
+                </select>
+                <br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome"   required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="mariazinha@hotmail.com"   required><br>
+                <label for="telefone">Telefone Fixo:</label>
+                <input type="tel" id="telefone" placeholder="(99) 9999-9999"   required><br>
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" placeholder="(99) 99999-9999" required><br>
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" required><br>
+
+                <div id="aluno-form" style="display: none;">
+                    <br>
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" placeholder="Digite o curso" required><br>
+                    <label for="matricula">Matrícula:</label>
+                    <input type="text" id="matricula" placeholder="Digite a matrícula" required><br>
+                </div>
+                <div id="professor-form" style="display: none;">
+                    <label for="area">Área:</label>
+                    <input type="text" id="area" placeholder="Digite a área" required><br>
+                    <label for="lattes">Lattes:</label>
+                    <input type="text" id="lattes" placeholder="Informe o link do Lattes" required><br>
+                </div>
+
+                <button type="submit">Enviar</button>
+                <button type="button" onclick="resetForm()">Limpar</button>
+            </form>
+        </div>
+    <script>
+        document.getElementById('tipo').addEventListener('change', function() {
+            const alunoForm = document.getElementById('aluno-form');
+            const professorForm = document.getElementById('professor-form');
+
+            if (this.value === 'aluno') {
+                alunoForm.style.display = 'block';
+                professorForm.style.display = 'none';
+            } else {
+                alunoForm.style.display = 'none';
+                professorForm.style.display = 'block';
+            }
+        });
+
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+            const celular = document.getElementById('celular').value;
+            const dataNascimento = document.getElementById('dataNascimento').value;
+
+            let pessoa;
+
+            if (document.getElementById('tipo').value === 'aluno') {
+                const curso = document.getElementById('curso').value;
+                const matricula = document.getElementById('matricula').value;
+                pessoa = new Aluno(nome, email, telefone, celular, dataNascimento, curso, matricula);
+            } else {
+                const area = document.getElementById('area').value;
+                const lattes = document.getElementById('lattes').value;
+                const matricula = document.getElementById('matriculaProfessor').value;
+                pessoa = new Professor(nome, email, telefone, celular, dataNascimento, matricula, area, lattes);
+            }
+
+                    alert("Dados cadastrados com sucesso!");
+                    document.getElementById('form').reset();
+                    console.log(pessoa);
+                });
+
+                function resetForm() {
+                    document.getElementById('form').reset();
+                }
+
+        class Pessoa {
+            constructor(nome, email, telefone, celular, dataNascimento) {
+                this.nome = nome;
+                this.email = email;
+                this.telefone = telefone;
+                this.celular = celular;
+                this.dataNascimento = dataNascimento;
+            }
+        }
+
+        class Aluno extends Pessoa {
+            constructor(nome, email, telefone, celular, dataNascimento, curso, matricula) {
+                super(nome, email, telefone, celular, dataNascimento);
+                this.curso = curso;
+                this.matricula = matricula;
+            }
+        }
+
+        class Professor extends Pessoa {
+            constructor(nome, email, telefone, celular, dataNascimento, matricula, area, lattes) {
+                super(nome, email, telefone, celular, dataNascimento);
+                this.matricula = matricula;
+                this.area = area;
+                this.lattes = lattes;
+            }
+        }
+    </script>
+</body>
+</html>
