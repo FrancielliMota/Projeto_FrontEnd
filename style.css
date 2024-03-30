@@ -1,58 +1,213 @@
+/* Define a fonte padrão e configura o layout flexível para centralizar conteúdo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #aab3ab;
-    color: white;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  section {
-    margin: 20px;
-  }
-  
-  h2 {
-    color: #f3db1c;
-    font-weight: 700;
-    font-style:inherit;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-width: 150%; /* Define a largura máxima do corpo */
+  margin: 2px;
 }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #1E90FF;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    color: #4CAF50;
-  }
 
-    footer {
-      background-color: #aab3ab;
-      padding: 10px;
-      text-align: center;
-      position:relative;
-      bottom: 0;
-      width: 100%;
-    }
+/* Estilo para as imagens de aumento e diminuição */
+.imagem-maior,
+.imagem-menor {
+  max-width: 24px;
+  max-height: 24px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
 
-    footer a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
+/* Configuração para o contador */
+.contador {
+  text-align: center;
+}
 
-  
+/* Estilo para o título do contador */
+.contador h2 {
+  margin-top: 0;
+}
+
+/* Estilo para os ícones do contador */
+.contador .icon {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #aab3ab;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  height: 30%;
+  position: fixed; /* Define o cabeçalho como posição fixa */
+  top: 0; /* Ancora o cabeçalho no topo da página */
+  z-index: 1; /* Garante que o cabeçalho esteja na parte superior */
+}
+
+/* Conteúdo principal */
+main {
+  margin-top: 200px; /* Margem superior para afastar o conteúdo principal do cabeçalho */
+  padding: 20px;
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box; /* Garante que o preenchimento seja incluído na largura */
+}
+
+
+/*Seletores */
+select {
+  padding: 10px;
+}
+
+/* Estilo para títulos h2 */
+h2 {
+  color: #f3db1c;
+  font-weight: 900;
+  font-style: initial;
+  text-align: center;
+}
+
+/* Remove a estilização padrão das listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Define a margem inferior para cada item da lista */
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para links */
+a {
+  text-decoration: none;
+  color: #1E90FF;
+  font-weight: bold;
+}
+
+/* Estilo para links ao passar o mouse sobre eles */
+a:hover {
+  color: #4CAF50;
+}
+
+/* Estilo para labels */
+label {
+  text-align: left;
+}
+
+/* Estilo para itens visualizados */
+.v {
+  color: #bac0c7;
+}
+
+/* Adiciona espaço entre os elementos */
+.espaco {
+  margin-bottom: 50px;
+}
+
+/* Estilo para o rodapé */
+footer {
+
+  background-color: #aab3ab;
+  color: white;
+  text-align: center;
+  padding: 2px;
+  width: 100%;
+  height: 10%;
+  position: fixed; /* Define o cabeçalho como posição fixa */
+  bottom: 0; /* Ancora o cabeçalho no topo da página */
+}
+
+/* Estilo para links no rodapé */
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilo para os campos do formulário */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+/* Estilo para o botão do formulário */
+button {
+  background-color: #4CAF50;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Espaçamento entre os botões do formulário e o topo */
+.button-wrapper {
+  margin-top: 20px;
+}
+
+/* Espaçamento horizontal entre os botões do formulário */
+.button-wrapper button {
+  margin: 0 110px;
+}
+
+/* Estilo para o hover do botão */
+button:hover {
+  background-color: #00b4cc;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+  /* max-width: 800px; */
+  height: 94%;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+/* Estilo para a seta de rolagem */
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Estilo para o hover da seta de rolagem */
+.arrow:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para o total */
+.total {
+  font-size: 24px; /* Tamanho da fonte maior */
+  font-weight: bold; /* Texto em negrito */
+  color: blue; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+}
+.imglogo{
+  max-width: 50px;
+  max-height: 40px;
+  margin-bottom: 5px;
+  padding: 3px;
+}

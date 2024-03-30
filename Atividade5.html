@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 5 - Laboratório de Engenharia de Software</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>        
+        <div class="container">
+            <div class="contador">
+              <h1>Contador de Pessoas</h1>   
+            <!-- Homens -->
+              <main>
+                <div class="imagem">
+                  <img src="homem.png" alt="Homem">
+                </div>
+                <span>Homens</span>
+                <div class="pessoa" id="homens">
+                    <img src="menos.png" alt="Menor" class="imagem-menor" id="homemMinus">
+                    <img src="mais.png" alt="Maior" class="imagem-maior" id="homemPlus">
+                    <br>
+                    <span>Quantidade = </span>
+                    <span id="quantidadeHomens">0</span>
+                  </main>
+
+              <!-- Muheres -->
+              <main class="espaco">
+                <div class="imagem">
+                    <img src="mulher.png" alt="Mulher">
+                </div>
+                <span>Mulheres</span>
+                <div class="pessoa" id="mulheres">
+                    <img src="menos.png" alt="Menor" class="imagem-menor" id="mulherMinus">
+                    <img src="mais.png" alt="Maior" class="imagem-maior" id="mulherPlus">
+                    <br>
+                    <span>Quantidade = </span>
+                    <span id="quantidadeMulheres">0</span>
+                  </div>
+              </main>
+            <div id="quantidadeTotal" class="total">Total: 0</div>
+
+            <script>
+              // Inicializando quantidades
+              let quantidadeHomens = 0;
+              let quantidadeMulheres = 0;
+
+              // Atualizando quantidades
+              function atualizarQuantidades() {
+                  document.getElementById('quantidadeHomens').textContent = quantidadeHomens;
+                  document.getElementById('quantidadeMulheres').textContent = quantidadeMulheres;
+                  document.getElementById('quantidadeTotal').textContent = 'Total: ' + (quantidadeHomens + quantidadeMulheres);
+              }
+
+              // Manipuladores de cliques para homens
+              document.getElementById('homemPlus').addEventListener('click', function() {
+                  quantidadeHomens++;
+                  atualizarQuantidades();
+              });
+
+              document.getElementById('homemMinus').addEventListener('click', function() {
+                  if (quantidadeHomens > 0) {
+                  quantidadeHomens--;
+                  atualizarQuantidades();
+                  }
+              });
+
+              // Manipuladores de cliques para mulheres
+              document.getElementById('mulherPlus').addEventListener('click', function() {
+                  quantidadeMulheres++;
+                  atualizarQuantidades();
+              });
+
+              document.getElementById('mulherMinus').addEventListener('click', function() {
+                  if (quantidadeMulheres > 0) {
+                  quantidadeMulheres--;
+                  atualizarQuantidades();
+                  }
+              });
+            </script>
+            </div>
+        </div>
+</body>
+</html>
