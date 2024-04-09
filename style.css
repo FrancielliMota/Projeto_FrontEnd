@@ -211,3 +211,61 @@ button:hover {
   margin-bottom: 5px;
   padding: 3px;
 }
+.calculadora {
+  width: 280px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.calculadora input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.calculadora button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+  .btn {
+    border-radius: 50%;
+  }
+  
+  .btn-ac, .btn-sinal, .btn-porcentagem {
+    background-color: lightgray;
+    color: black;
+  }
+  
+  .btn-operador {
+    background-color: orange;
+    color: white;
+  }
+  
+  .btn-valor {
+    background-color: #7c7c7c;
+    color: white;
+    text-align: center;
+  }
+  .estiloCalc {
+    /* max-width: 800px; */
+    height: 120%;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  .numZero{
+    width: 500px;
+    border-radius: 50%;
+
+  }
