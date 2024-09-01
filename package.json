@@ -1,0 +1,23 @@
+{
+  "name": "projeto_branchit",
+  "version": "1.0.0",
+  "description": "<img src=\"imgJs.png\" width=\"60\" height=\"60\">",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancielliMota/Projeto-BranchIT.git"
+  },
+  "author": "Francielli Viana Mota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrancielliMota/Projeto-BranchIT/issues"
+  },
+  "homepage": "https://github.com/FrancielliMota/Projeto-BranchIT#readme",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
