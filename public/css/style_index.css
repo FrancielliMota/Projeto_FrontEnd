@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #abbcd1, #4d6685);
+    font-family: Arial, sans-serif;
+}
+
+.branchit-title {
+    font-size: 250px;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: transparent;
+    text-align: center;
+    -webkit-text-stroke: 0.13rem #e5e4e2;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.vertical-menu {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #647c98;
+    width: 7rem;
+    overflow-x: hidden;
+    transition: width 0.3s;
+    border-radius: 0 10px 10px 0;
+    z-index: 1000;
+}
+
+.menu-trigger {
+    display: block;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.vertical-menu a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.vertical-menu:hover {
+    width: 10rem;
+}
+
+.vertical-menu:hover .dropdown-content {
+    display: flex;
+}
+
+.vertical-menu a:hover {
+    background-color: #575757;
+}
+
+@media (max-width: 768px) {
+    .branchit-title {
+        font-size: 120px;
+    }
+
+    .vertical-menu {
+        width: 5rem;
+    }
+
+    .menu-trigger {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    .vertical-menu a {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .vertical-menu:hover {
+        width: 7rem;
+    }
+}
+
+
+
+

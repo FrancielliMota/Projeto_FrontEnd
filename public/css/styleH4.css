@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+}
+
+p {
+    color: #a8bbd0;
+    text-align: justify; 
+    font-size: 1.25rem;
+}
+
+h1, h5 {
+    color: #4b5d75;
+}
+
+h1 {
+    font-size: 3.17rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.25rem;
+    margin-top: 0.2rem;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #6c849c;
+    margin-left: 1.25rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem;
+    margin-top: 5rem;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.left-side {
+    flex: 1;
+    padding: 0.9375rem;
+    background-color: #ffffff;
+    margin-left: 1.25rem;
+    margin-right: 13rem;
+}
+
+.right-side {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 35.625rem;
+    height: 25rem;
+    overflow: hidden;
+    margin: 1.25rem auto;
+    border: 0.125rem solid white;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.right-side img:hover {
+    transform: scale(1.05);
+}
+
+.left-side h1 {
+    margin-top: 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 9rem;
+}
+
+.explore-button {
+    border: 0.125rem solid #4b5d75;
+    background-color: white;
+    color: #4b5d75;
+    padding: 0.625rem 2.5rem;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.order-button {
+    border: none;
+    background-color: #4b5d75;
+    color: white;
+    border-radius: 1.875rem;
+    padding: 0.625rem 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.nav-link.order {
+    border: 0.0625rem solid #4b5d75;
+    background-color: #4b5d75;
+    color: white;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.icon {
+    width: 1.75rem;
+    height: auto;
+    color: #6c849c !important;
+}
+
+.additional-section {
+    width: 60%;
+    padding: 0.9375rem;
+    margin-left: 7.5rem;
+    margin-bottom: 3.125rem;
+}
+
+.additional-section img {
+    width: 60%;
+    height: 30%;
+}
+
+.additional-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+    color: #a8bbd0;
+    text-align: justify;
+}
+
+/* Estilização do Voltar */
+
+.home-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.home-icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.home-icon:hover {
+    background-color: #819ef9;
+}
+
+.home-icon:hover img {
+    filter: brightness(1.2);
+}
+
+
+
+/* Responsividade para mobile */
+
+@media (max-width: 48rem) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.4rem;
+    }
+
+    .right-side {
+        max-width: 90%;
+        height: 20rem;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .right-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .left-side {
+        padding: 1rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 90%;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+    h5 {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    
+    }
+
+
+    .logo {
+        width: 3.75rem;
+    }
+    
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-button, .order-button {
+        font-size: 1rem;
+        padding: 1rem 7rem;
+        border-radius: 1.5625rem;
+    }
+}

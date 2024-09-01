@@ -1,25 +1,16 @@
-<img src="imgJs.png" width="60" height="60">
 
-# REPOSITÓRIO PARA DESENVOLVIMENTO DE PROJETOS EM JAVASCRIPT:
-	
-> Resolucao dos exercícios propostos na disciplina de "Laboratório de Engenharia de Software", pertencente á grade curricular do 5º termo do curso de Análise e Desenvolvimento de Sistemas da FATEC de Presidente Prudente-SP.
+# Desenvolvimento Front-End:
 
-### 🙏 Facilitadora: Prof.ª Dr.ª Ana Carolina Nicolosi da Rocha Gracioso.
+Este repositório contém o desenvolvimento de quatro templates utilizando HTML, CSS e JavaScript. O projeto foi criado com base no processo seletivo para estágio da empresa Branch IT de Presidente Prudente-SP.
 
-### 📚 Ementa:
-Desenvolvimento de um software utilizando os conhecimentos adquiridos ao longo do curso.
-A elaboração irá abordar as disciplinas de requisitos, análise e projeto, implementação, implantação e gerência de projetos.
 
-### 🎬 Conteúdos em JavaScript
-* Expressões e operadores;
-* Funções;
-* Objetos;
-* Coleções indexadas;
+3. **Ferramentas e Documentação utilizada**:
+   - [MDN Web Docs - JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+   - [W3Schools - JavaScript](https://www.w3schools.com/js/default.asp)
+   - [W3Schools - HTML](https://www.w3schools.com/html/default.asp)
+   - [W3Schools - CSS](https://www.w3schools.com/css/default.asp)
+   - [React.js](https://pt-br.reactjs.org)
+   - [Google Fonts](https://fonts.google.com/)
+   - [Consulta de paleta de cores](https://paletadecores.com/)
 
-### ⚓ Referências Bibliográficas
-* 📖 PRESSMAN, R. S. Engenharia de software. 6.ed. McGraw-Hill, 2006.
-* 📖 OLIVEIRA, C.H.P. SQL – Curso Prático. Editora Novatec, 2002.
-* 🔗 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript.
-* 🔗 https://www.w3schools.com/js/default.asp;
-* 🔗 https://pt-br.reactjs.org.
-
+   

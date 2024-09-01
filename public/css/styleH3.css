@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+}
+
+h1, h5 {
+    color: #4b5d75;
+}
+
+h1 {
+    font-size: 5.625rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #6c849c;
+    margin-left: 1.25rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a8bbd0;
+    margin-left: 5.625rem;
+    margin-right: 5.625rem;
+    margin-top: 2rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.explore-button {
+    border: 2px solid #4b5d75;
+    background-color: white;
+    color: #4b5d75;
+    padding: 0.625rem 4rem;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.order-button {
+    border: none;
+    background-color: #4b5d75;
+    color: white;
+    border-radius: 1.875rem;
+    padding: 0.625rem 4rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav-link.order {
+    border: 1px solid #4b5d75;
+    background-color: #4b5d75;
+    color: white;
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+.icon {
+    width: 1.875rem;
+}
+
+/* Estilos para a nova seção */
+.additional-section {
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.additional-section img {
+    width: 60%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.additional-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+    text-align: center;
+    color: #a8bbd0;
+}
+
+/* Estilização do Voltar */
+
+.home-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.home-icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.home-icon:hover {
+    background-color: #819ef9;
+}
+
+.home-icon:hover img {
+    filter: brightness(1.2);
+}
+
+
+
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 5.625rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin-right: 0.3rem;
+        margin-left: 0.3rem;
+    }
+
+    h5 {
+        font-size: 0.9375rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.125rem;
+        text-align: center;
+        margin: 1.5rem;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .explore-button, .order-button {
+        font-size: 1.125rem;
+        padding: 0.75rem 4rem;
+        margin-bottom: 0.5rem;
+        border-radius: 1.5625rem;
+    }
+
+    .additional-section {
+        font-size: 0.875rem;
+    }
+
+    .additional-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
